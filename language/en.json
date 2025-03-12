@@ -1,0 +1,16 @@
+{
+    "semantics": [
+      {
+        "label": "Instructions Text",
+        "description": "Instructions that are shown to the user."
+      },
+      {
+        "label": "Words/Phrases",
+        "description": "Enter the words or phrases to practice."
+      },
+      {
+        "label": "Word/Phrase",
+        "description": "The word or phrase to pronounce."
+      }
+    ]
+  }

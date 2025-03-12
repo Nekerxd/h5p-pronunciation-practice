@@ -1,0 +1,115 @@
+{
+  "title": "Pronunciation Practice",
+  "description": "A simple H5P activity for practicing phrase pronunciation using speech recognition.",
+  "majorVersion": 1,
+  "minorVersion": 0,
+  "patchVersion": 0,
+  "runnable": 1,
+  "author": "Big",
+  "license": "MIT",
+  "machineName": "H5P.PronunciationPractice",
+  "preloadedDependencies": [
+    {
+      "machineName": "FontAwesome",
+      "majorVersion": 4,
+      "minorVersion": 5
+    },
+    {
+      "machineName": "H5P.Video",
+      "majorVersion": 1,
+      "minorVersion": 6
+    },
+    {
+      "machineName": "H5P.Question",
+      "majorVersion": 1,
+      "minorVersion": 5
+    },
+    {
+      "machineName": "H5P.JoubelUI",
+      "majorVersion": 1,
+      "minorVersion": 3
+    },
+    {
+      "machineName": "H5P.FontIcons",
+      "majorVersion": 1,
+      "minorVersion": 0
+    }
+  ],
+  "preloadedJs": [
+    {
+      "path": "scripts/h5p-pronunciation-practice.js"
+    }
+  ],
+  "preloadedCss": [
+    {
+      "path": "styles/h5p-pronunciation-practice.css"
+    }
+  ],
+  "editorDependencies": [
+    {
+      "machineName": "H5P.QuestionSet",
+      "majorVersion": 1,
+      "minorVersion": 18,
+      "preloadedJs": [
+        {
+          "path": "dist/h5p-question-set.js"
+        }
+      ],
+      "preloadedCss": [
+        {
+          "path": "dist/h5p-question-set.css"
+        }
+      ]
+    }
+  ],
+  "semantics": [
+    {
+      "name": "words",
+      "type": "list",
+      "label": "Words to Practice",
+      "entity": "Word",
+      "field": {
+        "name": "word",
+        "type": "text",
+        "label": "Word",
+        "description": "Enter a word or phrase for pronunciation practice."
+      }
+    },
+    {
+      "name": "instructionsText",
+      "type": "text",
+      "label": "Instructions Text",
+      "default": "1. Click 'Listen' to hear the pronunciation.\n2. Click 'Start Speaking' and pronounce the phrase.\n3. Click 'Next' to go to another phrase.",
+      "description": "Instructions on how to use this interactive content."
+    },
+    {
+      "label": "User Interface Text",
+      "name": "UI",
+      "type": "group",
+      "importance": "low",
+      "fields": [
+        {
+          "label": "Check Answer Button",
+          "name": "checkAnswerButton",
+          "type": "text",
+          "default": "Check",
+          "importance": "low"
+        },
+        {
+            "label": "Show Solution Button",
+            "name": "showSolutionButton",
+            "type": "text",
+            "default": "Show solution",
+            "importance": "low"
+        },
+        {
+            "label": "Try Again Button",
+            "name": "tryAgainButton",
+            "type": "text",
+            "default": "Try again",
+            "importance": "low"
+         }
+      ]
+    }
+  ]
+}

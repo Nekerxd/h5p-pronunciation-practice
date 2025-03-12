@@ -1,0 +1,161 @@
+/*
+    You can largely copy your existing CSS here.  
+    Make sure to prefix selectors with .h5p-pronunciation-practice
+    to avoid conflicts with other H5P styles.
+*/
+
+.h5p-pronunciation-practice {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f7f9fc;
+    color: #333;
+}
+
+.h5p-pronunciation-practice h1, .h5p-pronunciation-practice h2 {
+    color: #2c3e50;
+    text-align: center;
+}
+
+.h5p-pronunciation-practice .container {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* ... and so on for all your other styles ... */
+
+/* Example of a more specific selector */
+.h5p-pronunciation-practice .container .word-container {
+  /* Styles */
+}
+.h5p-pronunciation-practice .current-word {
+    font-size: 48px;
+    font-weight: bold;
+    color: #3498db;
+    margin: 20px 0;
+    text-align: center;
+    line-height: 2.8em;
+}
+
+.h5p-pronunciation-practice .phonetic {
+    font-size: 20px;
+    color: #7f8c8d;
+    margin-bottom: 10px;
+}
+
+.h5p-pronunciation-practice .example {
+    font-style: italic;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.h5p-pronunciation-practice button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px 5px;
+    transition: background-color 0.3s;
+}
+
+.h5p-pronunciation-practice button:hover {
+    background-color: #2980b9;
+}
+
+.h5p-pronunciation-practice button:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+}
+
+.h5p-pronunciation-practice .result {
+    margin: 20px 0;
+    text-align: center;
+    font-size: 18px;
+}
+
+.h5p-pronunciation-practice .score {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.h5p-pronunciation-practice .instructions {
+    margin-top: 30px;
+    background-color: #f1f8ff;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 4px solid #3498db;
+}
+
+.h5p-pronunciation-practice .controls {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.h5p-pronunciation-practice .recognition-result {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.h5p-pronunciation-practice .voice-feedback {
+    background-color: rgba(70, 155, 219, 0.1);
+    color: #3498db;
+    border: 1px solid rgba(70, 155, 219, 0.7);
+}
+
+.h5p-pronunciation-practice .correct {
+    background-color: rgba(70, 155, 219, 0.1);
+    color: #3498db;
+    border: 1px solid rgba(70, 155, 219, 0.7);
+}
+
+.h5p-pronunciation-practice .incorrect {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.h5p-pronunciation-practice .word-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.h5p-pronunciation-practice .word-item {
+    background-color: #e9f7fe;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.h5p-pronunciation-practice .word-item:hover {
+    background-color: #d0eafc;
+}
+
+.h5p-pronunciation-practice .level-selector {
+    margin: 20px 0;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .h5p-pronunciation-practice .current-word {
+        font-size: 32px;
+    }
+    
+    .h5p-pronunciation-practice button {
+        padding: 10px 16px;
+        margin: 5px;
+    }
+}

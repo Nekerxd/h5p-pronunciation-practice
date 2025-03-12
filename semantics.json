@@ -1,0 +1,47 @@
+[
+  {
+    "name": "mediumGroup",
+    "label": "Medium",
+    "type": "group",
+    "importance": "high",
+    "expanded": true,
+    "fields": [
+      {
+        "name": "medium",
+        "type": "library",
+        "label": "Medium",
+        "options": [
+          "H5P.Audio 1.5",
+          "H5P.InteractiveVideo 1.26",
+          "H5P.Video 1.6"
+        ]
+      },
+      {
+        "name": "dummy",
+        "type": "boolean",
+        "widget": "none",
+        "label": "Dummy"
+      }
+    ]
+  },
+  {
+    "label": "Instructions Text",
+    "name": "instructionsText",
+    "type": "textarea",
+    "default": "1. Click 'Listen' to hear the pronunciation.\n2. Click 'Start Speaking' and pronounce the phrase.\n3. Click 'Next' to go to another phrase.",
+    "description": "Instructions that are shown to the user."
+  },
+  {
+    "label": "Words/Phrases",
+    "name": "words", 
+    "type": "list",
+    "entity": "Word",
+    "description": "Enter the words or phrases to practice.",
+    "field": {
+      "label": "Word/Phrase",
+      "name": "word",
+      "type": "text",
+      "description": "The word or phrase to pronounce."
+    }
+  }
+]
